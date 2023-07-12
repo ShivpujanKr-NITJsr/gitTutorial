@@ -31,21 +31,21 @@
 
 //*******************************// GetElementsByClassName */
 
-var items =document.getElementsByClassName('list-group-item');
-console.log(items);
-console.log(items[1]);
+// var items =document.getElementsByClassName('list-group-item');
+// console.log(items);
+// console.log(items[1]);
 
-items[1].textContent='Hello 2';
-items[1].style.fontWeight='bold';
+// items[1].textContent='Hello 2';
+// items[1].style.fontWeight='bold';
 
-items[1].style.backgroundColor='yellow';
+// items[1].style.backgroundColor='yellow';
 
-//********************************************GetElementsByTagName */
+// //********************************************GetElementsByTagName */
 
 
-for(var i=1;i<items.length;i++){
-    items[i].style.backgroundColor='#f4f4f4';
-}
+// for(var i=1;i<items.length;i++){
+//     items[i].style.backgroundColor='#f4f4f4';
+// }
 
 //*************************************************QuerySelector */
 
@@ -70,5 +70,14 @@ for(var i=1;i<items.length;i++){
 // id.createElement('li');
 
 
+var item=document.querySelector('.list-group-item:nth-child(2)');
+item.style.backgroundcolor='green';
+var item=document.querySelector('.list-group-item:nth-child(3)');
 
+item.style.visibility='hidden';
 
+var it=document.querySelectorAll('.list-group-item:nth-child(2)');
+it.style.backgroundcolor='green';
+
+var irt=document.querySelectorAll('.list-group-item:nth-child(odd)');
+irt.style.backgroundcolor='green';
