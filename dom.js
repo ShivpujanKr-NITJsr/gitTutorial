@@ -31,21 +31,21 @@
 
 //*******************************// GetElementsByClassName */
 
-// var items =document.getElementsByClassName('list-group-item');
-// console.log(items);
-// console.log(items[1]);
+var items =document.getElementsByClassName('list-group-item');
+console.log(items);
+console.log(items[1]);
 
-// items[1].textContent='Hello 2';
-// items[1].style.fontWeight='bold';
+items[1].textContent='Hello 2';
+items[1].style.fontWeight='bold';
 
-// items[1].style.backgroundColor='yellow';
+items[1].style.backgroundColor='yellow';
 
 //********************************************GetElementsByTagName */
 
 
-// for(var i=1;i<DataTransferItemList.length;i++){
-//     li[i].style.backgroundColor='#f4f4f4';
-// }
+for(var i=1;i<items.length;i++){
+    items[i].style.backgroundColor='#f4f4f4';
+}
 
 //*************************************************QuerySelector */
 
@@ -60,11 +60,15 @@
 // var secondItem=document.querySelector('li:nth-child(odd)');
 // secondItem.style.color="green";
 
-var third=document.getElementsByClassName("list-group-item");
-third[2].style.backgroundColor='green';
-var al=document.getElementById("items");
+// var third=document.getElementsByClassName("list-group-item");
+// third[2].style.backgroundColor='green';
+// var al=document.getElementById("items");
 
-al.style.fontWeight='bold';
+// al.style.fontWeight='bold';
+
+// var id=document.getElementById('items');
+// id.createElement('li');
+
 
 
 
